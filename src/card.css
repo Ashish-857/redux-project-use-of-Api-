@@ -1,0 +1,155 @@
+.card-container {
+  width: 80%;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;object-fit: cover;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* cart.css */
+.notification {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  z-index: 1000;
+}
+
+.item-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item {
+  width: calc(25% - 20px); /* 25% width for 4 items in a row with 20px spacing between */
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+}
+
+.item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .item {
+    width: calc(50% - 20px); /* 50% width for 2 items in a row with 20px spacing between */
+  }
+}
+
+@media (max-width: 480px) {
+  .item {
+    width: 100%; /* Full width for 1 item in a row */
+    margin-right: 0;
+  }
+}
+li{font-weight: bold;}
+
+
+
+
+
+
+
+
+
+
+/*  */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  padding: 16px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 200px;
+  margin: 16px;
+  text-align: center;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1.2em;
+  margin: 8px 0;
+}
+
+.card-price {
+  color: #888;
+  font-size: 1em;
+  margin: 8px 0;
+}
+
+.card-button {
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.card-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+  }
+}
